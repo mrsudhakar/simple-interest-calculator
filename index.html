@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Interest Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Simple Interest Calculator</h1>
+  <div class="calculator">
+    <label for="principal">Principal Amount:</label>
+    <input type="number" id="principal" placeholder="Enter principal amount">
+
+    <label for="rate">Interest Rate (%):</label>
+    <input type="number" id="rate" placeholder="Enter interest rate">
+
+    <label for="time">Time Period (years):</label>
+    <input type="number" id="time" placeholder="Enter time period">
+
+    <button onclick="calculate()">Calculate</button>
+  </div>
+
+  <div id="results">
+    <h2>Results</h2>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Interest Earned</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+</body>
+</html>
